@@ -1,0 +1,50 @@
+#app {
+  display: grid;
+  height: 300px;
+  width: 500px;
+  grid-template-columns: 15% 60% 25%;
+  grid-template-rows: 20% 30% 30% 20%;
+}
+
+#header, #footer {
+  grid-column: 1 / 4;
+  background-color: #9BCE1D;
+}
+
+#header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+#footer {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+#main {
+  background-color: #F7F5D8
+}
+
+#article-1 {
+  background-color: lightcoral;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+#article-2 {
+  background-color: violet;
+  grid-row: 3/ 4;
+  grid-column: 2 / 3;
+}
+
+#nav {
+  background-color: cornflowerblue;
+  grid-row: 2 / 4;
+  grid-column: 1 / 2
+}
+
+#ad-area {
+  background-color: cornflowerblue;
+  grid-row: 2 / 4;
+  grid-column: 3;
+}
