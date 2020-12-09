@@ -9,37 +9,41 @@
 }
 
 #header {
-  background-color: red;
+  /* from start point to end point */
   grid-column: 1 / 4;
+  /* or, the same as the above line */
+  /* but described as start point and SIZE */
+  grid-column: 1 / span 3;
   grid-row: 1 / 2;
+  background-color: red;
 }
 
 #footer {
-  background-color: indigo;
   grid-column: 1 / 4;
   grid-row: 4 / 5;
+  background-color: indigo;
 }
 
 #article-1 {
-  background-color: yellow;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  background-color: yellow;
 }
 
 #article-2 {
-  background-color: green;
   grid-column: 2 / 3;
-  grid-row: 3/ 4;
+  grid-row: 3 / 4;
+  background-color: green;
 }
 
 #nav {
+  grid-row: 2 / 4;
   background-color: orange;
   grid-column: 1 / 2;
-  grid-row: 2 / 4;
 }
 
 #ad-area {
-  background-color: blue;
   grid-column: 3 / 4;
   grid-row: 2 / 4;
+  background-color: blue;
 }
