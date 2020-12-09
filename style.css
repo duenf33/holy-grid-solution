@@ -1,50 +1,45 @@
 #app {
+  height: 600px;
+  width: 800px;
+  font-size: 3em;
+  text-align: center;
   display: grid;
-  height: 300px;
-  width: 500px;
   grid-template-columns: 15% 60% 25%;
-  grid-template-rows: 20% 30% 30% 20%;
-}
-
-#header, #footer {
-  grid-column: 1 / 4;
-  background-color: #9BCE1D;
+  grid-template-rows: 15% 35% 35% 15%;
 }
 
 #header {
+  background-color: red;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
 }
 
 #footer {
+  background-color: indigo;
   grid-column: 1 / 4;
-  grid-row: 3;
-}
-
-#main {
-  background-color: #F7F5D8
+  grid-row: 4 / 5;
 }
 
 #article-1 {
-  background-color: lightcoral;
-  grid-row: 2 / 3;
+  background-color: yellow;
   grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 #article-2 {
-  background-color: violet;
-  grid-row: 3/ 4;
+  background-color: green;
   grid-column: 2 / 3;
+  grid-row: 3/ 4;
 }
 
 #nav {
-  background-color: cornflowerblue;
+  background-color: orange;
+  grid-column: 1 / 2;
   grid-row: 2 / 4;
-  grid-column: 1 / 2
 }
 
 #ad-area {
-  background-color: cornflowerblue;
+  background-color: blue;
+  grid-column: 3 / 4;
   grid-row: 2 / 4;
-  grid-column: 3;
 }
